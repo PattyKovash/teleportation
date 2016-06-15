@@ -104,7 +104,7 @@ button {
 }
 
 .body {
-    background: #000000 url(images/background_lg.jpg) no-repeat center center fixed;
+    background: #000000 url(../images/background.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
