@@ -3,6 +3,8 @@ var test = document.getElementById("mainContent");
 // array of p elements of mainContent
 var info = test.getElementsByTagName("p");
 
+var autoPlayButton = document.getElementById("auto");
+
 /* ===== Helper Functions ===== */
 
 // Fade In 
@@ -14,7 +16,7 @@ function fadeIn(elem) {
 		}
 		elem.style.opacity = opacity;
 		opacity += .1;
-	}, 60);
+	}, 40);
 };
 
 // Fade Out with callback
@@ -27,7 +29,7 @@ function fadeOutAndCallback(elem, callback) {
 		}
 		elem.style.opacity = opacity;
 		opacity -= .1;
-	}, 50);	
+	}, 40);	
 };
 
 // Function to Exchange text
@@ -52,7 +54,7 @@ function slideshow(docElem, elemArray) {
 /* ===== End Helper Functions ===== */
 
 
-window.addEventListener("click", function(e) {
+autoPlayButton.addEventListener("click", function(e) {
 	var count = 0;
 	var timer = setInterval(function() {
 		slideshow(test, info);
@@ -66,7 +68,7 @@ window.addEventListener("click", function(e) {
 				}
 				slideshow(test, info);
 				counter++;
-			}, 4000);
+			}, 6000);
 		}
 	}, 1500);
 });
