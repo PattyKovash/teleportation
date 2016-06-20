@@ -153,8 +153,11 @@ h1.underline {
 }
 
 /* ===== Buttons ===== */
+button:hover {
+    background: rgba(100, 150, 255, 0.4);
+}
 
-.buttons button {
+#auto {
     border: 2px solid white;
     padding: 3px 15px;
     margin-bottom: 5%;
@@ -162,6 +165,24 @@ h1.underline {
     text-transform: uppercase;
     font-weight: bolder;
     background: rgba(255, 255, 255, 0.2);
+}
+
+img {
+    border: 2px solid white;
+    padding: 3px 15px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+#auto:hover {
+    background: rgba(170, 150, 200, 0.5);
+}
+
+#auto:active {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+#auto:focus {
+    outline: none;
 }
 
 
